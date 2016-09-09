@@ -1,4 +1,8 @@
 
+# 0.4.0
+
+  * Downgrade iptables-ng cb and test use in Vagrantfile
+
 # 0.3.0
 
   * Update metadata versionless and vagrantfile
