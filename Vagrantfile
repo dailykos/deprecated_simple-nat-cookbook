@@ -30,7 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'ubuntu-xenial'
   config.vm.box_url = "#{current_dir}/../dk-ops/boxen/vagrant/ubuntu-xenial.box"
   config.vm.box_download_checksum_type = "sha256"
-  config.vm.box_download_checksum = "5d3e965451ab4ea33943587039d9ec20966efef036b8f6c9c1bac3964baa3048"
+  config.vm.box_download_checksum = "49230415f4a0aa37716cb852641a7ffe495116bde3e9ca7f1240b229472160a3"
 
 
   # Assign this VM to a host-only network IP, allowing you to access it
@@ -85,6 +85,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         server_root_password: 'rootpass',
         server_debian_password: 'debpass',
         server_repl_password: 'replpass'
+      },
+      "iptables-ng": {
+        rules: {
+          filter: {
+            INPUT: {
+              default: "ACCEPT [0:0]"
+            }
+          }
+        }
       }
     }
 
