@@ -1,4 +1,10 @@
 
+# 0.5.0
+
+  * Ignore vagrant console logs
+  * Do not specify iptables-ng cb version
+  * Update vagrant config to use default ubuntu xenial image
+
 # 0.4.0
 
   * Downgrade iptables-ng cb and test use in Vagrantfile
