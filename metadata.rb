@@ -6,5 +6,5 @@ description      'Installs/Configures simple-nat-cookbook'
 long_description 'Installs/Configures simple-nat-cookbook'
 version          '0.4.0'
 
-depends 'iptables-ng', '~> 2.2.8'
+depends 'iptables-ng'
 depends 'sysctl'
